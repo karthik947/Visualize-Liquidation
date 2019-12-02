@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Margin Trading</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.css" rel="stylesheet">
+    <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <br>
+      <div class="row justify-content-center">
+          <h1 id-"mgtitle">Margin <span id="mfv" class="text-danger">5x</span></h1>
+      </div>
+      <div class="row justify-content-center">
+        <label for="leverageLimit">Leverage</label>
+        <input onchange="leverageChanged(this.value);" type="range" class="custom-range" min="1" max="5" step="1" id="leverageLimit">
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-sm-6 row justify-content-center">
+            <h1 id="lqv" class="text-danger">20%</h1>
+        </div>
+        <div class="col-sm-6 row justify-content-center">
+          <h1 id="tfv" class="text-danger">20%</h1>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-sm-6 row justify-content-center">
+            <p class="label2 bg-dark text-white">&nbsp;Liquidation&nbsp;</p>
+        </div>
+        <div class="col-sm-6 row justify-content-center">
+          <p class="label2 bg-dark text-white">&nbsp;Trading Fees&nbsp;</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
